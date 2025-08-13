@@ -1,13 +1,14 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Experience from "@/components/portfolio/Experience";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen bg-background text-foreground">
+      <header className="container mx-auto max-w-5xl px-6 pt-16 pb-8">
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Aryan Mehrotra — Software Developer</h1>
+        <p className="mt-3 text-lg text-muted-foreground">Engineer. Optimizer. Creator of beautiful code and experiences.</p>
+      </header>
+      <Experience />
+    </main>
   );
 };
 
