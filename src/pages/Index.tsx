@@ -1,14 +1,33 @@
+import Navbar from "@/components/portfolio/Navbar";
+import ScrollProgress from "@/components/portfolio/ScrollProgress";
+import Hero from "@/components/portfolio/Hero";
+import About from "@/components/portfolio/About";
 import Experience from "@/components/portfolio/Experience";
+import Projects from "@/components/portfolio/Projects";
+import TechStack from "@/components/portfolio/TechStack";
+import Leadership from "@/components/portfolio/Leadership";
+import Contact from "@/components/portfolio/Contact";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background text-foreground">
-      <header className="container mx-auto max-w-5xl px-6 pt-16 pb-8">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Aryan Mehrotra — Software Developer</h1>
-        <p className="mt-3 text-lg text-muted-foreground">Engineer. Optimizer. Creator of beautiful code and experiences.</p>
-      </header>
-      <Experience />
-    </main>
+    <>
+      <ScrollProgress />
+      <Navbar />
+      <main className="bg-background text-foreground">
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <TechStack />
+        <Leadership />
+        <Contact />
+      </main>
+      <footer className="border-t">
+        <div className="container mx-auto max-w-6xl px-6 py-8 text-sm text-muted-foreground">
+          © {new Date().getFullYear()} Aryan Mehrotra. All rights reserved.
+        </div>
+      </footer>
+    </>
   );
 };
 

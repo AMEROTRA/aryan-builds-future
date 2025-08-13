@@ -75,7 +75,7 @@ const Experience = () => {
   };
 
   return (
-    <section aria-labelledby="experience-heading" className="border-t">
+    <section id="experience" aria-labelledby="experience-heading" className="border-t">
       <div className="container mx-auto max-w-5xl px-6 py-12 md:py-16">
         <div className="mb-8 md:mb-12">
           <h2 id="experience-heading" className="text-2xl md:text-3xl font-semibold tracking-tight">
